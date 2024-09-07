@@ -28,17 +28,44 @@
   background-size: cover;
 }
 
-.center {
+.item-showcase {
   margin: auto;
-  width: 50%;
+  width: 70%;
   border: 3px solid green;
   padding: 10px;
-  min-height: 80%;
-  min-width: 70%;
+  height: fit-content;
   backdrop-filter: blur(6px);
+  border-radius: 50px;
+  padding: 2rem;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
 .flex-center {
   display: flex;
   height: 100%;
-  border: 3px solid red;
+  overflow: scroll;
+  flex-direction: column;
+}
+
+
+.image-kirk {
+  border-radius: 50px;
+  height: auto;
+  width: 90%;
+}
+
+.bio-wrapper {
+
+}
+
+.bio {
+  margin-top: 2rem;
+  width: 100%;
+  backdrop-filter: blur(6px);
 }
