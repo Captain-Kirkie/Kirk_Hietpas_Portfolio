@@ -21,3 +21,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#root {
+
+  height: 100vh;
+
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 
+import Scroller from '../Components/Scroller';
+
 const Home = () => {
     return (
-        <div>
-           <h1> Hello world this is home.</h1>
-        </div>
+        <Scroller/>
     );
 };
 
