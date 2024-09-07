@@ -1,5 +1,5 @@
 import React from 'react';
-import IconWrapper from "../Components/IconWrapper"
+import {IconWrapper} from "../Components/IconWrapper"
 import Scroller from '../Components/Scroller';
 
 const Home = () => {

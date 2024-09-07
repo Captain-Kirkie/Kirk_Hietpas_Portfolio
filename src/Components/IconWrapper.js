@@ -1,17 +1,56 @@
-
-
 const IconWrapper = (props) => {
-    return (
-        <div className="grid-container">
-            <div className="grid-item">1</div>
-            <div className="grid-item">2</div>
-            <div className="grid-item">3</div>
-        </div>
-
-    );
+  return (
+    <div className="grid-container">
+      <Icon
+        name="Linked In"
+        icon=""
+        onClick={() => {
+          console.log(`hello world`);
+        }}
+      >
+        1
+      </Icon>
+      <Icon
+        name="GitLab"
+        icon=""
+        onClick={() => {
+          console.log("whatever");
+        }}
+      >
+        1
+      </Icon>
+      <Icon
+        name="GitHub"
+        icon=""
+        onClick={() => {
+          console.log("whatever");
+        }}
+      >
+        1
+      </Icon>
+      <Icon
+        name="Resume"
+        icon=""
+        onClick={() => {
+          console.log("whatever");
+        }}
+      >
+        1
+      </Icon>
+    </div>
+  );
 };
 
-export default IconWrapper
-// const Icon = (props) => {
+const Icon = (props) => {
+    return (
+      <div className="icon-container" onClick={props.onClick} >
+        <div className="grid-item"></div>
+        <div className="item-label">
+        {props.name}
+        </div>
 
-// }
+      </div>
+  );
+};
+
+export { IconWrapper, Icon };
