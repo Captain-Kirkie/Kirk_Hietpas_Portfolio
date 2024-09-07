@@ -33,6 +33,9 @@
   width: 50%;
   border: 3px solid green;
   padding: 10px;
+  min-height: 80%;
+  min-width: 70%;
+  backdrop-filter: blur(6px);
 }
 .flex-center {
   display: flex;
