@@ -15,7 +15,7 @@ const IconWrapper = (props) => {
       </Icon>
       <Icon
         name="GitLab"
-        icon="gitlab-logo-500.svg"
+        icon="gitlab-logo.png"
         onClick={() => {
           window.open("https://gitlab.com/Captain-Kirkie", "_blank").focus();
         }}
