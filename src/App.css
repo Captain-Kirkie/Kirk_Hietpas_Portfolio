@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -44,14 +43,12 @@
   align-items: center;
 }
 
-
 .flex-center {
   display: flex;
   height: 100%;
   overflow: scroll;
   flex-direction: column;
 }
-
 
 .image-kirk {
   border-radius: 50px;
@@ -69,11 +66,9 @@
   color: whitesmoke;
 }
 
-
 .grid-container {
   position: fixed;
   display: grid;
-  grid-template-columns: auto auto auto;
   padding: 10px;
   top: 0rem;
   left: 0rem;
@@ -94,7 +89,10 @@
 
 .icon-container {
   margin: 1rem;
-  width: 3rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-label {
@@ -107,4 +105,31 @@ body {
   background-image: url("../public/background/angelsLanding.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.resume-pdf {
+  width: min-content;
+}
+
+.resume-wrapper {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  height: 2rem;
+  width: 15rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arrow {
+  height: 2rem;
+  width: 2rem;
 }
