@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const IconWrapper = (props) => {
   return (
     <div className="grid-container">
@@ -30,16 +31,18 @@ const IconWrapper = (props) => {
       >
         1
       </Icon>
-      <Icon
-        name="Resume"
-        icon="chexIcon.png"
-        onClick={() => {
-          console.log("I love Chexy Boy");
-        }}
-          >
-               {/* <Link to="/about">Contact</Link> */}
-        1
-      </Icon>
+      <Link to="/about">
+        <Icon
+          name="Resume"
+          icon="chexIcon.png"
+          onClick={() => {
+            console.log("I love Chexy Boy");
+          }}
+        >
+          <Link to="/about"></Link>
+          {/* <Link to="/about">Contact</Link> */}1
+        </Icon>
+      </Link>
     </div>
   );
 };
