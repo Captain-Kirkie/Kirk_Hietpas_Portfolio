@@ -4,8 +4,8 @@ const IconWrapper = (props) => {
       <Icon
         name="Linked In"
         icon="LinkedIn_logo_initials.png"
-        onClick={() => {
-          console.log(`hello world`);
+              onClick={() => {
+                window.open("https://www.linkedin.com/in/kirk-hietpas/", '_blank').focus();
         }}
       >
         1
@@ -14,7 +14,8 @@ const IconWrapper = (props) => {
         name="GitLab"
         icon="gitlab-logo-500.svg"
         onClick={() => {
-          console.log("gitlab");
+            window.open("https://gitlab.com/Captain-Kirkie", '_blank').focus();
+
         }}
       >
         1
@@ -23,7 +24,8 @@ const IconWrapper = (props) => {
         name="GitHub"
         icon="Github-desktop-logo-symbol.png"
         onClick={() => {
-          console.log("gitlab.");
+            window.open("https://github.com/Captain-Kirkie", '_blank').focus();
+
         }}
       >
         1
