@@ -74,20 +74,20 @@
   position: fixed;
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
   padding: 10px;
   top: 0rem;
   left: 0rem;
   grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
 }
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
+.icon-image-wrapper {
+  font-size: 3px;
   text-align: center;
 }
 
+.icon-img {
+  height: 100%;
+  width: 100%;
+}
 .homeWrapper {
   height: 100%;
 }

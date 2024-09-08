@@ -3,7 +3,7 @@ const IconWrapper = (props) => {
     <div className="grid-container">
       <Icon
         name="Linked In"
-        icon=""
+        icon="LinkedIn_logo_initials.png"
         onClick={() => {
           console.log(`hello world`);
         }}
@@ -12,25 +12,25 @@ const IconWrapper = (props) => {
       </Icon>
       <Icon
         name="GitLab"
-        icon=""
+        icon="gitlab-logo-500.svg"
         onClick={() => {
-          console.log("whatever");
+          console.log("gitlab");
         }}
       >
         1
       </Icon>
       <Icon
         name="GitHub"
-        icon=""
+        icon="Github-desktop-logo-symbol.png"
         onClick={() => {
-          console.log("whatever");
+          console.log("gitlab.");
         }}
       >
         1
       </Icon>
       <Icon
         name="Resume"
-        icon=""
+        icon="chexIcon.png"
         onClick={() => {
           console.log("whatever");
         }}
@@ -41,15 +41,14 @@ const IconWrapper = (props) => {
   );
 };
 
-const Icon = (props) => {
-    return (
-      <div className="icon-container" onClick={props.onClick} >
-        <div className="grid-item"></div>
-        <div className="item-label">
-        {props.name}
-        </div>
-
+const Icon = ({ name, icon, onClick }) => {
+  return (
+    <div className="icon-container" onClick={onClick}>
+      <div className="icon-image-wrapper">
+            <img src={icon} className="icon-img" alt="invalidIcon"></img>
       </div>
+      <div className="item-label">{name}</div>
+    </div>
   );
 };
 
