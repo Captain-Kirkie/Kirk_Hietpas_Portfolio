@@ -31,7 +31,7 @@ const IconWrapper = (props) => {
       >
         1
       </Icon>
-      <Link to="/about">
+      <Link to="/resume">
         <Icon
           name="Resume"
           icon="chexIcon.png"
@@ -39,8 +39,6 @@ const IconWrapper = (props) => {
             console.log("I love Chexy Boy");
           }}
         >
-          <Link to="/about"></Link>
-          {/* <Link to="/about">Contact</Link> */}1
         </Icon>
       </Link>
     </div>
