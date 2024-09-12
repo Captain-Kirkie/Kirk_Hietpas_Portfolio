@@ -12,15 +12,6 @@ code {
     monospace;
 }
 
-html{
-  height: 100%;
-}
-body {
-  min-height: 100%;
-  background-image: url("../public/background/angelsLanding.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #root {
   height: 100vh;
