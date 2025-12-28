@@ -1,19 +1,13 @@
 import React from "react";
 
-const ScrollerListItem = (props) => {
+const ScrollerListItem = ({ imgSrc, bio }) => {
     return (
-        <ul className="item-showcase">
-            <img
-                src={props.imgSrc}
-                alt="imgAlt"
-                className="image-kirk"
-                loading="lazy"
-            />
+        <div className="min-w-[250px] h-40 bg-gray-200 rounded-lg item item-showcase">
+            <img src={imgSrc} alt="" className="image-kirk" loading="lazy" />
             <div className="bio-wrapper">
-                <div className="bio">{props.bio}</div>
+                <div className="bio">{bio}</div>
             </div>
-        </ul>
+        </div>
     );
 };
-
 export default ScrollerListItem;
