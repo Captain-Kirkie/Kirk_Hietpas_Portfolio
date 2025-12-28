@@ -49,7 +49,7 @@ const PDFViewer = () => {
             </div>
             <Document
                 className="resume-pdf"
-                file="/Resume_Kirk_Hietpas.pdf"
+                file={`${process.env.PUBLIC_URL}/Resume_Kirk_Hietpas.pdf`}
                 onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
