@@ -6,10 +6,12 @@ import { pdfjs } from "react-pdf";
 import { Button } from "flowbite-react";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    "pdfjs-dist/build/pdf.worker.min.mjs",
-    import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//     "pdfjs-dist/build/pdf.worker.min.mjs",
+//     import.meta.url
+// ).toString();
+
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
 
 const PDFViewer = () => {
     const [numPages, setNumPages] = useState(2);
@@ -47,7 +49,7 @@ const PDFViewer = () => {
             </div>
             <Document
                 className="resume-pdf"
-                file="Resume_Kirk_Hietpas.pdf"
+                file="/Resume_Kirk_Hietpas.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
