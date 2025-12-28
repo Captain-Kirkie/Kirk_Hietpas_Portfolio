@@ -51,7 +51,7 @@
 .image-kirk {
     border-radius: 50px;
     height: auto;
-    width: 40%;
+    width: 60%;
     max-width: 30rem;
 }
 
@@ -72,6 +72,7 @@
     top: 0rem;
     left: 0rem;
     grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    z-index: 1;
 }
 .icon-image-wrapper {
     font-size: 3px;
@@ -132,4 +133,24 @@ body {
 .arrow {
     height: 2rem;
     width: 2rem;
+}
+@media (max-width: 431px) {
+    /* Desktop / tablet styles here */
+    .homeWrapper {
+        /* background-color: rgb(225, 225, 227); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .grid-container {
+        /* background-color: red; */
+        position: unset;
+    }
+    .image-kirk {
+        border-radius: 50px;
+        height: auto;
+        width: 60%;
+        max-width: 30rem;
+    }
 }

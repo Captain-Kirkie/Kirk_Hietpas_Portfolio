@@ -5,8 +5,8 @@ import Scroller from '../Components/Scroller';
 const Home = () => {
     return (
         <div className='homeWrapper'>
-            <Scroller/>
             <IconWrapper/>
+            <Scroller/>
         </div>
     );
 };
