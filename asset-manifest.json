@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Kirk_Hietpas_Portfolio/static/css/main.cecbd4fa.css",
-    "main.js": "/Kirk_Hietpas_Portfolio/static/js/main.39b274cd.js",
+    "main.js": "/Kirk_Hietpas_Portfolio/static/js/main.0bfc7155.js",
     "static/js/453.c546e740.chunk.js": "/Kirk_Hietpas_Portfolio/static/js/453.c546e740.chunk.js",
     "static/media/angelsLanding.jpg": "/Kirk_Hietpas_Portfolio/static/media/angelsLanding.140ce0b431b4adae6026.jpg",
     "index.html": "/Kirk_Hietpas_Portfolio/index.html",
     "main.cecbd4fa.css.map": "/Kirk_Hietpas_Portfolio/static/css/main.cecbd4fa.css.map",
-    "main.39b274cd.js.map": "/Kirk_Hietpas_Portfolio/static/js/main.39b274cd.js.map",
+    "main.0bfc7155.js.map": "/Kirk_Hietpas_Portfolio/static/js/main.0bfc7155.js.map",
     "453.c546e740.chunk.js.map": "/Kirk_Hietpas_Portfolio/static/js/453.c546e740.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cecbd4fa.css",
-    "static/js/main.39b274cd.js"
+    "static/js/main.0bfc7155.js"
   ]
 }
