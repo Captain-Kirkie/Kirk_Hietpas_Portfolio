@@ -47,10 +47,10 @@ const PDFViewer = () => {
             </div>
             <Document
                 className="resume-pdf"
-                file="/Resume_Kirk_Hietpas.pdf"
+                file="Resume_Kirk_Hietpas.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
-                <Page pageNumber={pageNumber}/>
+                <Page pageNumber={pageNumber} />
             </Document>
             <p>
                 Page {pageNumber} of {numPages}
