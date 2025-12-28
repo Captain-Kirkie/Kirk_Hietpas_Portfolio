@@ -113,12 +113,11 @@ body {
 }
 
 .resume-wrapper {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .button-wrapper {
