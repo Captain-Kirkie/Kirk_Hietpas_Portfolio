@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Kirk_Hietpas_Portfolio/static/css/main.e2dfd56a.css",
-    "main.js": "/Kirk_Hietpas_Portfolio/static/js/main.f651d0fa.js",
+    "main.js": "/Kirk_Hietpas_Portfolio/static/js/main.e2927ecb.js",
     "static/css/812.45ed0263.chunk.css": "/Kirk_Hietpas_Portfolio/static/css/812.45ed0263.chunk.css",
-    "static/js/812.2ce585de.chunk.js": "/Kirk_Hietpas_Portfolio/static/js/812.2ce585de.chunk.js",
+    "static/js/812.c77153f3.chunk.js": "/Kirk_Hietpas_Portfolio/static/js/812.c77153f3.chunk.js",
     "static/js/453.c546e740.chunk.js": "/Kirk_Hietpas_Portfolio/static/js/453.c546e740.chunk.js",
     "static/js/46.cca63fd7.chunk.js": "/Kirk_Hietpas_Portfolio/static/js/46.cca63fd7.chunk.js",
     "static/media/angelsLanding.jpg": "/Kirk_Hietpas_Portfolio/static/media/angelsLanding.140ce0b431b4adae6026.jpg",
     "index.html": "/Kirk_Hietpas_Portfolio/index.html",
     "main.e2dfd56a.css.map": "/Kirk_Hietpas_Portfolio/static/css/main.e2dfd56a.css.map",
-    "main.f651d0fa.js.map": "/Kirk_Hietpas_Portfolio/static/js/main.f651d0fa.js.map",
+    "main.e2927ecb.js.map": "/Kirk_Hietpas_Portfolio/static/js/main.e2927ecb.js.map",
     "812.45ed0263.chunk.css.map": "/Kirk_Hietpas_Portfolio/static/css/812.45ed0263.chunk.css.map",
-    "812.2ce585de.chunk.js.map": "/Kirk_Hietpas_Portfolio/static/js/812.2ce585de.chunk.js.map",
+    "812.c77153f3.chunk.js.map": "/Kirk_Hietpas_Portfolio/static/js/812.c77153f3.chunk.js.map",
     "453.c546e740.chunk.js.map": "/Kirk_Hietpas_Portfolio/static/js/453.c546e740.chunk.js.map",
     "46.cca63fd7.chunk.js.map": "/Kirk_Hietpas_Portfolio/static/js/46.cca63fd7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2dfd56a.css",
-    "static/js/main.f651d0fa.js"
+    "static/js/main.e2927ecb.js"
   ]
 }
