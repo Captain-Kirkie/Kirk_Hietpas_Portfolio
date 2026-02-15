@@ -7,27 +7,39 @@ export default function AvatarFollowEyes() {
     const [offset, setOffset] = useState<Offset>({ x: 0, y: 0 });
 
     useEffect(() => {
+        let rafId: number | null = null;
+        let lastMouseEvent: MouseEvent | null = null;
+
         const handleMouseMove = (e: MouseEvent) => {
-            if (!svgRef.current) return;
+            lastMouseEvent = e;
+            if (rafId !== null) return;
 
-            const rect = svgRef.current.getBoundingClientRect();
-            const cx = rect.left + rect.width / 2;
-            const cy = rect.top + rect.height / 2;
+            rafId = requestAnimationFrame(() => {
+                rafId = null;
+                if (!svgRef.current || !lastMouseEvent) return;
 
-            const dx = e.clientX - cx;
-            const dy = e.clientY - cy;
+                const rect = svgRef.current.getBoundingClientRect();
+                const cx = rect.left + rect.width / 2;
+                const cy = rect.top + rect.height / 2;
 
-            const max = 5;
-            const dist = Math.min(Math.sqrt(dx * dx + dy * dy), 120) || 1;
+                const dx = lastMouseEvent.clientX - cx;
+                const dy = lastMouseEvent.clientY - cy;
 
-            setOffset({
-                x: (dx / dist) * max,
-                y: (dy / dist) * max,
+                const max = 5;
+                const dist = Math.min(Math.sqrt(dx * dx + dy * dy), 120) || 1;
+
+                setOffset({
+                    x: (dx / dist) * max,
+                    y: (dy / dist) * max,
+                });
             });
         };
 
         window.addEventListener("mousemove", handleMouseMove);
-        return () => window.removeEventListener("mousemove", handleMouseMove);
+        return () => {
+            window.removeEventListener("mousemove", handleMouseMove);
+            if (rafId !== null) cancelAnimationFrame(rafId);
+        };
     }, []);
 
     return (

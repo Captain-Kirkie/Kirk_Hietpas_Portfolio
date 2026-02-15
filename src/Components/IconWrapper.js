@@ -1,61 +1,55 @@
 import { Link } from "react-router-dom";
-const IconWrapper = (props) => {
+const IconWrapper = () => {
     return (
-        <div className="grid-container">
-            <Icon
-                name="Linked In"
-                icon={`${process.env.PUBLIC_URL}/LinkedIn_logo_initials.png`}
-                onClick={() => {
-                    window
-                        .open(
-                            "https://www.linkedin.com/in/kirk-hietpas/",
-                            "_blank"
-                        )
-                        .focus();
-                }}
+        <nav className="grid-container" aria-label="Social media and resume links">
+            <a
+                href="https://www.linkedin.com/in/kirk-hietpas/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Kirk's LinkedIn profile"
             >
-                1
-            </Icon>
-            <Icon
-                name="GitLab"
-                icon={`${process.env.PUBLIC_URL}/gitlab-logo.png`}
-                onClick={() => {
-                    window
-                        .open("https://gitlab.com/Captain-Kirkie", "_blank")
-                        .focus();
-                }}
+                <Icon
+                    name="LinkedIn"
+                    icon={`${process.env.PUBLIC_URL}/LinkedIn_logo_initials.png`}
+                />
+            </a>
+            <a
+                href="https://gitlab.com/Captain-Kirkie"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Kirk's GitLab profile"
             >
-                1
-            </Icon>
-            <Icon
-                name="GitHub"
-                icon={`${process.env.PUBLIC_URL}/Github-desktop-logo-symbol.png`}
-                onClick={() => {
-                    window
-                        .open("https://github.com/Captain-Kirkie", "_blank")
-                        .focus();
-                }}
+                <Icon
+                    name="GitLab"
+                    icon={`${process.env.PUBLIC_URL}/gitlab-logo.png`}
+                />
+            </a>
+            <a
+                href="https://github.com/Captain-Kirkie"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Kirk's GitHub profile"
             >
-                1
-            </Icon>
-            <Link to="/resume">
+                <Icon
+                    name="GitHub"
+                    icon={`${process.env.PUBLIC_URL}/Github-desktop-logo-symbol.png`}
+                />
+            </a>
+            <Link to="/resume" aria-label="View Kirk's resume">
                 <Icon
                     name="Resume"
                     icon={`${process.env.PUBLIC_URL}/chexIcon.png`}
-                    onClick={() => {
-                        console.log("I love Chexy Boy");
-                    }}
-                ></Icon>
+                />
             </Link>
-        </div>
+        </nav>
     );
 };
 
-const Icon = ({ name, icon, onClick }) => {
+const Icon = ({ name, icon }) => {
     return (
-        <div className="icon-container" onClick={onClick}>
+        <div className="icon-container">
             <div className="icon-image-wrapper">
-                <img src={icon} className="icon-img" alt="invalidIcon"></img>
+                <img src={icon} className="icon-img" alt={`${name} icon`} />
             </div>
             <div className="item-label">{name}</div>
         </div>

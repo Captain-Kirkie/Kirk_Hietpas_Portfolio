@@ -1,30 +1,10 @@
-.App {
-    text-align: center;
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-.angels-landing {
+body {
     margin: 0;
     padding: 0;
-    /** background image */
-    background-image: url("../public//background/angelsLanding.jpg");
+    background-image: url("../public/background/angelsLanding.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .item-showcase {
@@ -44,7 +24,7 @@
 .flex-center {
     display: flex;
     height: 100%;
-    overflow: scroll;
+    overflow-y: auto;
     flex-direction: column;
 }
 
@@ -102,12 +82,6 @@
     text-align: center;
 }
 
-body {
-    background-image: url("../public/background/angelsLanding.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .resume-pdf {
     width: min-content;
 }
@@ -129,21 +103,23 @@ body {
     justify-content: space-between;
 }
 
-.arrow {
-    height: 2rem;
-    width: 2rem;
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    color: white;
 }
-@media (max-width: 431px) {
-    /* Desktop / tablet styles here */
+
+@media (max-width: 640px) {
     .homeWrapper {
-        /* background-color: rgb(225, 225, 227); */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
     .grid-container {
-        /* background-color: red; */
         position: unset;
     }
     .image-kirk {
