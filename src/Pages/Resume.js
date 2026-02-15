@@ -5,8 +5,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 import { pdfjs } from "react-pdf";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 
-
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.mjs`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const PDFViewer = () => {
     const [numPages, setNumPages] = useState(null);
@@ -23,12 +22,16 @@ const PDFViewer = () => {
         setError(error.message);
         setLoading(false);
     }
+    const url = `${process.env.PUBLIC_URL}/Resume_Kirk_Hietpas.pdf`;
 
     return (
         <div className="resume-wrapper" role="main" aria-label="Resume viewer">
             {loading && <p className="text-white text-lg">Loading resume...</p>}
-            {error && <p className="text-red-500 text-lg">Error loading resume: {error}</p>}
-
+            {error && (
+                <p className="text-red-500 text-lg">
+                    Error loading resume: {error}
+                </p>
+            )}
             <div className="button-wrapper">
                 <button
                     className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
@@ -56,10 +59,9 @@ const PDFViewer = () => {
                     <HiOutlineArrowRight className="h-6 w-6" />
                 </button>
             </div>
-
             <Document
                 className="resume-pdf"
-                file={`${process.env.PUBLIC_URL}/Resume_Kirk_Hietpas.pdf`}
+                file={url}
                 onLoadSuccess={onDocumentLoadSuccess}
                 onLoadError={onDocumentLoadError}
                 loading={<div className="text-white">Loading PDF...</div>}
@@ -68,9 +70,9 @@ const PDFViewer = () => {
                     pageNumber={pageNumber}
                     renderTextLayer={true}
                     renderAnnotationLayer={true}
+                    width={Math.min(window.innerWidth * 0.9, 800)}
                 />
             </Document>
-
             {numPages && (
                 <p className="text-white mt-4" role="status" aria-live="polite">
                     Page {pageNumber} of {numPages}
